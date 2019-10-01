@@ -395,6 +395,12 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     lang: '' || 'zh-cn',
     path: location.pathname
   });
+  var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
 }, window.Valine);
 </script>
 

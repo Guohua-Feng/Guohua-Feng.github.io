@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="冯国华同学">
 <meta property="og:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-01T02:34:26.443Z">
+<meta property="og:updated_time" content="2019-10-01T02:40:04.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小李Niko &amp; 小冯Bobi的小黑屋">
 <meta name="twitter:description" content="Here&apos;s something encrypted, password is required to continue reading.">
@@ -213,7 +213,7 @@
                 
               
 
-              <time title="Created: 2019-10-01 10:15:15 / Modified: 10:34:26" itemprop="dateCreated datePublished" datetime="2019-10-01T10:15:15+08:00">2019-10-01</time>
+              <time title="Created: 2019-10-01 10:15:15 / Modified: 10:40:04" itemprop="dateCreated datePublished" datetime="2019-10-01T10:15:15+08:00">2019-10-01</time>
             </span>
           
             
@@ -252,7 +252,7 @@
     <label for="hbePass">Hey, password is required here.</label>
     <div class="bottom-line"></div>
   </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="c93ac86e08a08a3d4ab977c0c8c1e7c3ba5384f9ddc051bf66d4661c96466b7d">98c945b63fd9a71b47c7a28b6d71ca97e3ec858e3f52ee0772bb6d26c4f193c58abe7d932a9725ab5595717439bcca519d18ab13ae955204f971b3be75b7fcd8</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="85bcb8d841c550b656ddcc8bf8eb76b73bd87b95e79112d38552400be2f50f09">98c945b63fd9a71b47c7a28b6d71ca97e3ec858e3f52ee0772bb6d26c4f193c58abe7d932a9725ab5595717439bcca515a8bb3d56599f8980194ef68118e26950033f57a94aa706126d365e3644b0555a551fb751c553599db24f5fd76b7423ba30968c480ec8a924e87bbf9e07073e83c669349f7212f7299084db54fcf92e3</script>
 </div>
 <script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
@@ -454,6 +454,12 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     lang: '' || 'zh-cn',
     path: location.pathname
   });
+  var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
 }, window.Valine);
 </script>
 
