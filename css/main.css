@@ -1253,6 +1253,13 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.header {
+  background-image: url("/images/background.jpg");
+  background-size: 100% 100%;
+}
+.header-inner {
+  position: relative;
+}
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -2055,7 +2062,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1dabff;
+  background: #7c3853;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2942,8 +2949,9 @@ header {
 .main {
   padding-bottom: 200px;
 }
+增加头部高度配合页面加载时的收缩特效,
 .header-inner {
-  padding: 80px 0 80px;
+  padding: 0px 30 80px;
 }
 #header,
 #footer {
